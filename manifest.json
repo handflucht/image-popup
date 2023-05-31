@@ -1,11 +1,10 @@
 {
-  "manifest_version": 2,
-  "name": "Google Image Search",
-  "version": "1.0",
-  "description": "Searches for marked text using Google Image Search in a new tab",
-  "permissions": ["contextMenus"],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "manifest_version": 3,
+    "name": "Google Image Search",
+    "version": "1.0",
+    "permissions": ["contextMenus", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    }
   }
-}
+  
